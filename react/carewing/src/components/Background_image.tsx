@@ -5,7 +5,6 @@ export function Background_Image() {
   useEffect(() => {
     // Store the original background
     const originalBackgroundImage = document.body.style.backgroundImage;
-    const originalBackgroundColor = document.body.style.backgroundColor;
 
     // Change the background to your desired image
     document.body.style.backgroundImage = "url('./images/login_page.jpeg')"; // Set the correct path to your image

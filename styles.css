@@ -1,0 +1,522 @@
+/*
+margin for the entire page is set to 0
+
+added a background image for the home page which is selcted with 
+a class named 'home'
+*/
+* {
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+.home {
+    background-image: url('images/background.jpeg');
+    background-size: 100%;
+    width: 100%;
+    height: 850px;
+}
+
+/*
+css for nav-bar at the top of the page 
+used several css selectors and combinators
+font poppins is also used 
+*/
+
+ nav > h3 {
+    color: rgb(49, 14, 1);
+    font-size: 30px;
+    padding-top: 30px;
+    padding-left: 240px;
+}
+
+
+.nav-contents {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.nav-contents > p {
+    padding-top: 40px;
+    font-size: medium;
+    color: rgb(236, 79, 21)
+}
+.nav-contents > label {
+    padding-top: 40px;
+    font-size: medium;
+    color: rgb(54, 52, 52);
+}
+.nav-contents > select {
+    width: 20px;
+    
+    background: none;
+    padding-top: 90px;
+}
+.nav-bar {
+   display: flex;
+   flex-direction: row;
+   gap: 400px;
+   position: fixed;
+}
+
+.btn > button {
+    width: 120px;
+    height: 40px;
+    border-radius: 10px;
+    border: 0px;
+    background-color:rgb(236, 79, 21) ;
+    color: white;
+
+
+   
+}
+.btn {
+    padding-top: 30px;
+    padding-right: 5px;
+}
+
+/* css for the font in centre and form design and display
+    for main content in the home page the font and form are placed
+    in a section home main body to place these some left using padding left
+    
+    in another home-main-body-container the form and font are made flex row
+
+    in home-main-body-container a text-box is made to adjust the font like in mock image
+
+    using combinators form is accessed and designed as per mock image
+ */
+
+.home-main-body {
+   padding-left: 230px;
+   padding-top: 250px;
+}
+.home-main-body-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.text-box h1 {
+    font-size: 60px;
+}
+.text-box {
+    width: 610px;
+}
+
+
+.home-main-body-container > form {
+    background-color: rgb(224, 213, 213);
+    opacity: 0.96;
+    width: 770px;
+    height: 70px;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: row;
+    gap: 90px;
+}
+.home-main-body-container > form > input, select {
+    border: none;
+    background-color: rgb(224, 213, 213);
+    text-align: center;
+    color: gray;
+}
+.home-main-body-container > form > .btn {
+    padding-top: 16px;
+}
+.home-main-body-container > form > .btn > button {
+    width: 120px;
+    height: 40px;
+}
+
+/* added a background after the home page contents
+   added the logos in flex box row display 
+ */
+
+.others {
+    background-image: url('images/white.avif');
+    background-size: 100%;
+    width: 100%;
+    height: 850px;
+    background-repeat: repeat
+}
+
+.logos {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+/* css for category is as follows
+
+the entire text and category options are placed in a category-flex-box
+with flex display coloumn 
+
+the options in category like guide, flights are placed in a category-box
+with display flex row
+
+for each individual element like guide, flights a sepearte flex box with their name
+is created and flex coloumn display is 
+
+combinators are used throughout
+
+*/
+
+.category-flex-box {
+    display: flex;
+    padding-left: 240px;
+    flex-direction: column;
+    width: 1100px;
+    gap: 10px;
+    height: 70px;
+}
+.category-flex-box > h3 {
+    text-align: center;
+    padding-top: 80px;
+    font-size: 15px;
+    color: rgb(236, 79, 21);
+}
+.category-flex-box > h2 {
+    text-align: center;
+    font-size: 40px;
+    color: rgb(4, 4, 77);
+}
+.category-box {
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+}
+
+.guide , .flight, .religious , .meds{
+
+    display: flex;
+    flex-direction: column;
+    width: 210px;
+    gap: 10px;
+}
+.guide > img {
+    width: 110px;
+    padding-top: 20px;
+}
+.guide , .flight , .meds, .religious> h3 {
+    font-size: 17px;
+}
+.flight > img {
+    width: 150px;
+    padding-top: 20px;
+}
+.religious > img , .meds > img{
+    width: 110px;
+    padding-top: 20px;
+}
+
+/* css for honeymoon section
+the image and details are placed in a honeymoon div in flex row
+inside the honeymoon div the details are placed in details-box in flex column
+inside details-box the text is written in individual div boxes for width adjustments
+button inside btn-packages box
+ */
+
+.honeymoon {
+    padding-left: 240px;
+    padding-top: 420px;
+    display: flex;
+    flex-direction: row;
+    gap: 200px;
+}
+.honeymoon > img {
+    width: 270px;
+}
+.details-box {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.details-box > h3 {
+    text-align: left;
+    padding-top: 80px;
+    font-size: 10px;
+    color: rgb(236, 79, 21);
+}
+.info-box {
+    width: 400px;
+}
+.details-box > h2 {
+    text-align: center;
+    font-size: 30px;
+    color: rgb(4, 4, 77);
+}
+.title-box {
+    width: 300px;
+}
+.btn-packages{
+    padding-right: 5px;
+}
+.btn-packages > button {
+    width: 120px;
+    height: 40px;
+    border-radius: 10px;
+    border: 0px;
+    background-color:rgb(236, 79, 21) ;
+    color: white;
+}
+/*css for fast and easy section
+flex row is used for display of complete section which is in fast div
+flex column is used for the details section in fast-details-box
+in details 
+ */
+.fast {
+    display: flex;
+    flex-direction: row;
+    gap: 150px;
+}
+.fast-details-box {
+    display: flex;
+    flex-direction: column;
+    padding-left: 240px;
+    padding-top: 70px;
+    gap: 20px;
+}
+.fast-details-box > h3 {
+    text-align: left;
+    padding-top: 80px;
+    font-size: 10px;
+    color: rgb(236, 79, 21);
+}
+.heading {
+    width: 280px;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.dest {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.dest > h3 {
+    color: tet
+    font-size: 15px;
+}
+.dest-text {
+    width: 400px;
+}
+.fast > img {
+    height: 300px;
+    width: 400px;
+    padding-top: 160px;
+}
+.statue-of-liberty > img{
+    height: 200px;
+    width: 1200px;
+}
+.statue-of-liberty {
+    padding-left: 200px;
+    padding-top: 40px;
+}
+
+/* css for the complete promotion part
+promotion for the complete images,text in flex row
+for text part promotion-content in flex column
+
+for explore city and nature another box of promotion images in flex row
+the position is set to relative to write text on it
+text in position absolute 
+the text on image is in nature and city divs in flex column
+
+ */
+.promotion {
+    display: flex;
+    flex-direction: row;
+    padding-left: 240px;
+    gap: 150px;
+    position: relative;
+}
+.prmotion-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.prmotion-content > h3 {
+    text-align: left;
+    padding-top: 80px;
+    font-size: 10px;
+    color: rgb(236, 79, 21);
+}
+.pr-title {
+    width: 370px;
+     color: rgb(4, 4, 77);
+}
+.pr-content {
+    width: 400px;
+}
+.promotion > img {
+    width: 500px;
+    height: 300px;
+    padding-top: 30px;
+}
+.promotion-images {
+    display: flex;
+    flex-direction: row;
+    gap: 0%;
+    padding-left: 200px;
+    padding-top: 100px;
+}
+.promotion-images > img {
+    width: 610px;
+    height: 200px;
+}
+.nature {
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+    position: absolute;
+}
+.nature > h3 {
+ color: rgb(22, 19, 19);
+ text-align: center;
+ padding-top: 90px;
+ padding-left: 840px;
+ font-size: 10px;
+}
+.nature > h2 {
+    color: rgb(22, 19, 19);
+    padding-left: 850px;
+}
+.explore > button {
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    width: 120px;
+    height: 40px;
+    border-color: rgb(22, 19, 19);
+    border-bottom: 2px solid rgb(22, 19, 19);
+    border-right: 2px solid rgb(22, 19, 19);
+}
+.explore {
+    padding-left: 880px;
+}
+.city {
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+    position: absolute;
+}
+.city > h3 {
+ color: rgb(221, 217, 217);
+ text-align: center;
+ padding-top: 90px;
+ padding-left: 170px;
+ font-size: 10px;
+}
+.city > h2 {
+    color: rgb(221, 217, 217);;
+    padding-left: 180px;
+}
+.explore-city > button {
+    background-color: transparent;
+    color: rgb(221, 217, 217);
+    border-radius: 10px;
+    width: 120px;
+    height: 40px;
+    border-color: rgb(221, 217, 217);
+    border-bottom: 2px solid rgb(221, 217, 217);
+    border-right: 2px solid rgb(221, 217, 217);
+}
+.explore-city {
+    padding-left: 200px;
+}
+
+/* css for trending 
+ trendy is used for placing images and text in flex column
+ images and text are placed in trendy-images in flex row
+*/
+
+.trendy {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 40px;
+    
+}
+.trendy > h3 {
+    text-align: center;
+    padding-top: 80px;
+    font-size: 10px;
+    color: rgb(236, 79, 21);
+}
+.trendy-title > h2 {
+    text-align: center;
+    font-size: 30px;
+    color: rgb(4, 4, 77);
+}
+.trendy-images {
+    display: flex;
+    flex-direction: row;
+    gap: 125px;
+    padding-left: 240px;
+}
+.egypt, .amazon, .switzerland {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+.switzerland > img , .amazon> img , .egypt > img{
+    width: 200px;
+    height: 200px;
+}
+.switzerland > h4, .amazon > h4, .egypt > h4  {
+    color: rgb(236, 79, 21);
+}
+.sz-text {
+    width: 300px;
+}
+/*css for footer of the page
+
+ */
+.footer {
+    padding-left: 440px;
+    padding-top: 120px;
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+}
+.destinations, .company, .join-us {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.post {
+    display: flex;
+    flex-direction: row;
+    gap: 0%;
+}
+.post > input {
+    border: 1px solid rgb(239, 231, 231);;
+    width: 200px;
+    height: 30px;
+    background-color: rgb(239, 231, 231);
+    color: rgb(239, 231, 231);
+    border-radius: 10px;
+}
+.post > button {
+    width: 100px;
+    height: 35px;
+    border-radius: 10px;
+    border: 0px;
+    background-color:rgb(236, 79, 21) ;
+    color: white;
+}
+.copy {
+    text-align: center;
+    padding-top: 30px;
+}
+
+
+
+
+
+
+
+
+
+

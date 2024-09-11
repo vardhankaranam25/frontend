@@ -2,15 +2,10 @@
 //not changed -- vardhan
 
 
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
-import Nav from './components/Nav'
 import Donate from './components/Donate'
 import Login from './components/Login'
 import UserHome from './components/UserHome'
-import Background from './components/Background'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Volunteer_User from './components/Volunteer-User'
 import SignUp from './SignUp'
@@ -25,10 +20,10 @@ import VolunteerOpportunityForm from "./components/VolunteerOpportunityForm";
 import UsersVolOpps from './components/UsersVolOpps';
 import MyDonations from './components/MyDonations'
 import MyVolunteer from './components/MyVolunteer'
-import { Provider } from 'react-redux';
+
 
 function App() {
-  const [count, setCount] = useState(0)
+  
 
   return (
     <>

@@ -1,4 +1,4 @@
-import NavNgo from "./NgoNav";
+
 import * as React from "react";
 import Accordion from "@mui/material/Accordion";
 import AccordionActions from "@mui/material/AccordionActions";
@@ -11,7 +11,7 @@ import TextField from "@mui/material/TextField";
 import Dialog from "@mui/material/Dialog";
 import DialogActions from "@mui/material/DialogActions";
 import DialogContent from "@mui/material/DialogContent";
-import DialogContentText from "@mui/material/DialogContentText";
+
 import DialogTitle from "@mui/material/DialogTitle";
 import "./Fund.css";
 import Nav from "./Nav";
@@ -44,7 +44,7 @@ export default function Fund() {
 
   const handlePayment = async (ngo: string) => {
     try {
-      const response = await fetch("http://localhost:5001/Users/Payment", {
+      await fetch("http://localhost:5001/Users/Payment", {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
@@ -91,7 +91,7 @@ export default function Fund() {
         </div>
 
         <div className="fund-display-area">
-          {data.map((vol, index) => (
+          {data.map((vol) => (
             <Accordion
               className="campaign-box"
               defaultExpanded

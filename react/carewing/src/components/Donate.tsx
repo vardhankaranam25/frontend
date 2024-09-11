@@ -5,8 +5,6 @@ import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 import Paper from "@mui/material/Paper";
 import Divider from "@mui/material/Divider";
-import ButtonGroup from "@mui/material/ButtonGroup";
-import CloudUploadIcon from "@mui/icons-material/CloudUpload";
 import Dialog from "@mui/material/Dialog";
 import DialogActions from "@mui/material/DialogActions";
 import DialogContent from "@mui/material/DialogContent";
@@ -14,7 +12,6 @@ import DialogContentText from "@mui/material/DialogContentText";
 import DialogTitle from "@mui/material/DialogTitle";
 
 import Nav from "./Nav";
-import DrawerAppBar from "../secondary_bar";
 
 const VisuallyHiddenInput = styled("input")({
   position: "absolute",
@@ -31,7 +28,7 @@ export default function Donate() {
   const [item, setItem] = useState<string>("");
   const [desc, setDesc] = useState<string>("");
   const [time, setTime] = useState<string>("");
-  const [fileName, setFileName] = useState<string>("");
+  const [fileName] = useState<string>("");
   const [openDialog, setOpenDialog] = React.useState<boolean>(false);
   const [dialogMessage, setDialogMessage] = React.useState<string>("");
 
@@ -54,7 +51,7 @@ export default function Donate() {
 
   const handleSubmit = async () => {
     try {
-      const userId = localStorage.getItem("id"); // Make sure to handle null or undefined
+      //const userId = localStorage.getItem("id"); // Make sure to handle null or undefined
       const response = await fetch(
         "http://localhost:5001/Users/Donation?item=" +
           item +

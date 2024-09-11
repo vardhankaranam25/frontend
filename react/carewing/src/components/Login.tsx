@@ -5,23 +5,17 @@ import * as React from 'react';
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
-import  { useRef, useState , ChangeEvent} from 'react';
+import  {useState , ChangeEvent} from 'react';
 import ToggleButton from '@mui/material/ToggleButton';
 import ToggleButtonGroup from '@mui/material/ToggleButtonGroup';
-import UserHome from './UserHome';
 import { useNavigate } from 'react-router-dom';
-import Alert from '@mui/material/Alert';
-import CheckIcon from '@mui/icons-material/Check';
-import SimpleBackdrop from './Backdrop';
-import { Background_Image } from './Background_image';
-import Background_Donate from './Background-Donate';
 import { Paper } from '@mui/material';
 import Dialog from "@mui/material/Dialog";
 import DialogActions from "@mui/material/DialogActions";
 import DialogContent from "@mui/material/DialogContent";
 import DialogContentText from "@mui/material/DialogContentText";
 import DialogTitle from "@mui/material/DialogTitle";
-import { useDispatch } from 'react-redux';
+
 
 
 
