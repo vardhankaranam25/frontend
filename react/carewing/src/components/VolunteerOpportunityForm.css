@@ -1,0 +1,232 @@
+/* Font styles */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Nunito:wght@300&display=swap");
+
+.opp-container {
+  position: relative;
+  width: 100%;
+  margin: 0%;
+  padding: 0%;
+  background-color: #dc143c;
+}
+
+.h1-2{
+  color: #ffffff;
+  font-size: 70px;
+  font-weight: 100px;
+}
+
+h1{
+  color:  rgb(15, 3, 70);
+}
+.intro-1{
+  margin: 100px;
+  margin-top: 0px;
+  padding-top: 150px;
+}
+
+.intro-1 h1{
+  padding: 10px;
+}
+
+.intro-para p{
+  padding: 10px;
+}
+
+.form-container {
+  padding: 100px;
+  background-color: rgb(182, 233, 216);
+  box-shadow: 0px 4px 6px rgba(63, 61, 61, 0.1); /* Add box shadow */
+  margin-top: 0px;
+}
+
+.intro-para > p {
+  color: #dfe3e7;
+  font-family: "Nunito", sans-serif;
+  font-size: large;
+  font-weight: 300;
+}
+
+.opp-flex-container {
+  margin-top: 100px;
+  display: flex;
+  gap: 100px;
+  padding: 100px;
+  background-color: #ffffff;
+  margin-left: 0%;
+}
+
+.text-field {
+  width: 300px;
+  height: 100px;
+  padding: 100px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.btn {
+  width: 100%;
+  height: 60px;
+  padding: 100px;
+  background-color:  rgb(15, 3, 70);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #01274e;
+}
+
+.bkg {
+  margin: 150px;
+}
+
+.intro-para > h1 {
+  text-align: center;
+  color: #dc143c;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  padding-bottom: 30px;
+  margin: 0%;
+  padding: 0%;
+}
+
+.opp-flex-container h4 {
+  color: rgb(224, 34, 91);
+  font-family: "Nunito", sans-serif;
+  font-weight: 100px;
+  font-size: 20px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+
+.inline {
+  display: flex;
+  align-items: center; /* Align items vertically */
+  margin-bottom: 16px; /* Adjust spacing between each icon-text pair */
+  gap: 30px;
+}
+
+.form-container h2{
+  padding-bottom: 30px;
+  margin-top: 0px;
+  padding-top: 0px;
+}
+
+.opp-flex-container-1 h1{
+  padding-bottom: 25px;
+}
+
+.form-container h2{
+  text-align: center;
+}
+
+/* Responsive Design */
+
+/* Small Devices (Mobile Phones) */
+@media (max-width: 576px) {
+  .opp-container {
+    padding: 20px; /* Reduced padding for smaller screens */
+  }
+
+  .h1-2 {
+    font-size: 40px; /* Smaller font size for mobile */
+  }
+
+  .intro-1 {
+    margin: 50px; /* Reduced margin for smaller screens */
+    padding-top: 75px; /* Adjusted top padding */
+  }
+
+  .form-container {
+    padding: 20px; /* Reduced padding for mobile */
+  }
+
+  .text-field {
+    width: 100%; /* Full width on smaller screens */
+    padding: 10px; /* Adjusted padding */
+    height: auto; /* Allow height to adjust based on content */
+  }
+
+  .btn {
+    height: 40px; /* Reduced height for smaller screens */
+    padding: 10px; /* Adjusted padding */
+  }
+
+  .inline {
+    gap: 10px; /* Reduced gap between elements */
+  }
+}
+
+/* Medium Devices (Tablets) */
+@media (min-width: 577px) and (max-width: 768px) {
+  .opp-container {
+    padding: 40px; /* Adjusted padding for tablets */
+  }
+
+  .h1-2 {
+    font-size: 60px; /* Adjusted font size */
+  }
+
+  .intro-1 {
+    margin: 75px; /* Adjusted margin for tablets */
+    padding-top: 125px; /* Adjusted top padding */
+  }
+
+  .form-container {
+    padding: 50px; /* Adjusted padding for tablets */
+  }
+
+  .text-field {
+    width: 90%; /* Adjusted width for tablets */
+    padding: 50px; /* Adjusted padding */
+  }
+
+  .btn {
+    height: 50px; /* Adjusted height for tablets */
+    padding: 50px; /* Adjusted padding */
+  }
+
+  .inline {
+    gap: 20px; /* Adjusted gap for tablets */
+  }
+}
+
+/* Large Devices (Laptops and Desktops) */
+@media (min-width: 769px) {
+  .opp-container {
+    padding: 100px; /* Restored default padding */
+  }
+
+  .h1-2 {
+    font-size: 70px; /* Restored font size */
+  }
+
+  .intro-1 {
+    margin: 100px; /* Restored margin */
+    padding-top: 150px; /* Restored top padding */
+  }
+
+  .form-container {
+    padding: 100px; /* Restored default padding */
+  }
+
+  .text-field {
+    width: 100%; /* Full width for larger screens */
+    padding: 100px; /* Restored padding */
+  }
+
+  .btn {
+    height: 60px; /* Restored height */
+    padding: 100px; /* Restored padding */
+  }
+
+  .inline {
+    gap: 30px; /* Restored gap */
+  }
+}

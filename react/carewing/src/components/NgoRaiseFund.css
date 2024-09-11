@@ -1,0 +1,214 @@
+.display {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100vw;
+  height: 400px;
+  padding: 100px;
+}
+
+.flex-box {
+  display: flex;
+}
+
+.fund-content-1 {
+  padding: 100px;
+  background-color: rgba(214, 163, 145, 0.911);
+  /* rgba(254, 254, 74, 0.637);   */
+  flex-grow: 1; 
+}
+
+.fund-content-2 {
+  padding-top: 50px;
+  position: relative;
+  flex-grow: 1; 
+}
+
+.fund-content-2 img{
+  padding-top: 20px;
+  padding-right: 0px;
+}
+
+.h1 {
+  color:  #dc143c;
+  padding: 25px;
+}
+
+#h1{
+  color:rgb(15, 3, 70);
+  padding-bottom: 25px;
+}
+
+#h3 {
+  color: white;
+}
+
+.container-fund {
+  display: flex;
+}
+
+.container-fund-1 {
+  padding: 100px;
+  padding-top: 50px;
+}
+
+.container-fund-2 {
+  padding: 100px;
+  padding-left: 100px;
+  padding-top: 50px;
+  background-color: rgb(182, 233, 216);
+}
+
+.container-fund-2 p{
+  font-size: large;
+}
+
+.container-fund-text{
+  padding: 30px;
+}
+
+#btn-1 {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 80px;
+  text-align: center;
+}
+
+#btn-2{
+  padding: 30px;
+  margin: 25px;
+  margin-top: 40px;
+  height: 5px;
+  width: 40%;
+}
+
+.title{
+  padding: 20px;
+}
+
+@media (max-width: 576px) {
+  .stats-intro {
+    padding-top: 100px; /* Adjusted padding for smaller screens */
+  }
+
+  .to-do {
+    padding: 50px; /* Reduced padding for smaller screens */
+  }
+
+  #h1-funds {
+    padding-top: 140px; /* Reduced top padding */
+    padding-bottom: 25px; /* Reduced bottom padding */
+    padding-left: 50px; /* Adjusted left padding */
+  }
+
+  .funds-text {
+    padding-left: 50px; /* Reduced padding for mobile */
+    padding-top: 25px; /* Adjusted padding */
+  }
+
+  .flex-box {
+    flex-direction: column; /* Stack flex elements vertically */
+  }
+
+  .fund-content-1,
+  .fund-content-2 {
+    padding: 20px; /* Reduced padding for smaller screens */
+  }
+
+  .fund-content-2 {
+    text-align: center; /* Center elements for smaller screens */
+  }
+
+  .container-fund {
+    padding: 20px; /* Adjusted padding for mobile */
+  }
+
+  .container-fund-1,
+  .container-fund-2 {
+    flex-direction: column; /* Stack elements vertically */
+  }
+
+  .mailbox {
+    width: 100%; /* Full width for text fields */
+  }
+
+  .fund-content-1 p {
+    font-size: 14px; /* Smaller font size for better readability on mobile */
+  }
+}
+
+/* Medium Devices (Tablets) */
+@media (min-width: 577px) and (max-width: 768px) {
+  .stats-intro {
+    padding-top: 150px; /* Adjusted padding for tablets */
+  }
+
+  .to-do {
+    padding: 75px; /* Adjusted padding for tablets */
+  }
+
+  #h1-funds {
+    padding-top: 210px; /* Adjusted top padding for tablets */
+  }
+
+  .flex-box {
+    flex-direction: row; /* Restore horizontal layout for tablets */
+  }
+
+  .fund-content-1,
+  .fund-content-2 {
+    padding: 40px; /* Increased padding for tablets */
+  }
+
+  .container-fund {
+    padding: 30px; /* Adjusted padding for tablets */
+  }
+
+  .container-fund-1,
+  .container-fund-2 {
+    flex-direction: row; /* Maintain horizontal layout */
+  }
+
+  .mailbox {
+    width: 90%; /* Reduced width for text fields on tablets */
+  }
+}
+
+/* Large Devices (Laptops and Desktops) */
+@media (min-width: 769px) {
+  .stats-intro {
+    padding-top: 200px; /* Restore default padding */
+  }
+
+  .to-do {
+    padding: 100px; /* Restore default padding */
+  }
+
+  #h1-funds {
+    padding-top: 280px; /* Restore default top padding */
+  }
+
+  .flex-box {
+    flex-direction: row; /* Restore horizontal layout */
+  }
+
+  .fund-content-1,
+  .fund-content-2 {
+    padding: 50px; /* Restore original padding */
+  }
+
+  .container-fund {
+    padding: 40px; /* Restore original padding */
+  }
+
+  .container-fund-1,
+  .container-fund-2 {
+    flex-direction: row; /* Restore horizontal layout */
+  }
+
+  .mailbox {
+    width: 80%; /* Restore original width for text fields */
+  }
+}

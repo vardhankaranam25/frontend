@@ -1,0 +1,154 @@
+
+
+.container_bar {
+    padding-top: 100px;
+}
+
+.bar_container {
+    height: 100%;
+}
+
+.stats-intro{
+  padding-top: 200px;
+}
+
+.stats-intro h1{
+  color: black;
+}
+
+.to-do{
+  padding: 100px;
+}
+
+#h1-funds{
+  padding-top: 280px;
+  padding: 100px;
+  padding-bottom: 50px;
+  margin: 0%;
+  background-color:  rgba(124, 22, 70, 0.192);
+}
+
+.funds-text{
+  padding-left: 100px;
+  padding-top: 50px;
+  color: rgb(124, 22, 70);
+}
+
+/* Responsive Design */
+
+/* Small Devices (Mobile Phones) */
+@media (max-width: 576px) {
+  #h1-funds {
+    padding-top: 140px; /* Reduced padding for mobile */
+    padding: 50px; /* Adjusted padding for mobile */
+    font-size: 24px; /* Adjusted font size for smaller screens */
+  }
+
+  .bar_container {
+    padding: 20px; /* Reduced padding for mobile */
+  }
+
+  .stats-intro {
+    padding-top: 100px; /* Adjusted padding for smaller screens */
+  }
+
+  .to-do {
+    padding: 50px; /* Reduced padding for mobile */
+  }
+
+  .funds-text {
+    padding-left: 20px; /* Reduced padding for mobile */
+    padding-top: 20px; /* Adjusted padding for smaller screens */
+    font-size: 16px; /* Adjusted font size for mobile */
+  }
+
+  .LinearProgress {
+    width: 100%; /* Full width on smaller screens */
+  }
+
+  .ProgressBar {
+    height: 8px; /* Reduced height for smaller screens */
+  }
+
+  .Typography {
+    font-size: 14px; /* Adjusted font size for smaller screens */
+  }
+}
+
+/* Medium Devices (Tablets) */
+@media (min-width: 577px) and (max-width: 768px) {
+  #h1-funds {
+    padding-top: 210px; /* Adjusted padding for tablets */
+    padding: 75px; /* Adjusted padding for tablets */
+    font-size: 36px; /* Adjusted font size for tablets */
+  }
+
+  .bar_container {
+    padding: 50px; /* Adjusted padding for tablets */
+  }
+
+  .stats-intro {
+    padding-top: 150px; /* Adjusted padding for tablets */
+  }
+
+  .to-do {
+    padding: 75px; /* Adjusted padding for tablets */
+  }
+
+  .funds-text {
+    padding-left: 50px; /* Adjusted padding for tablets */
+    padding-top: 40px; /* Adjusted padding for tablets */
+    font-size: 18px; /* Adjusted font size for tablets */
+  }
+
+  .LinearProgress {
+    width: 80%; /* Adjusted width for tablets */
+  }
+
+  .ProgressBar {
+    height: 10px; /* Adjusted height for tablets */
+  }
+
+  .Typography {
+    font-size: 16px; /* Adjusted font size for tablets */
+  }
+}
+
+/* Large Devices (Laptops and Desktops) */
+@media (min-width: 769px) {
+  #h1-funds {
+    padding-top: 280px; /* Restored default padding */
+    padding: 100px; /* Restored default padding */
+    font-size: 48px; /* Restored default font size */
+  }
+
+  .bar_container {
+    padding: 100px; /* Restored default padding */
+  }
+
+  .stats-intro {
+    padding-top: 200px; /* Restored default padding */
+  }
+
+  .to-do {
+    padding: 100px; /* Restored default padding */
+  }
+
+  .funds-text {
+    padding-left: 100px; /* Restored default padding */
+    padding-top: 50px; /* Restored default padding */
+    font-size: 24px; /* Restored default font size */
+  }
+
+  .LinearProgress {
+    width: 1000px; /* Restored default width */
+  }
+
+  .ProgressBar {
+    height: 12px; /* Restored default height */
+  }
+
+  .Typography {
+    font-size: 18px; /* Restored default font size */
+  }
+}

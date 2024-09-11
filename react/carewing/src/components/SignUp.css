@@ -1,0 +1,81 @@
+
+
+html, body {
+    margin: 0; /* Remove default margins */
+    height: 100%; /* Full height to match the viewport */
+    width: 100%; /* Full width to match the viewport */
+    padding-top: 0%;
+   
+  }
+.card {
+    
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: white;
+    width: 600px;
+    height: 710px;
+    align-items: center;
+    border-radius: 15px;
+}
+.container_box {
+    background-image: url('./images/signup.jpg'); /* Set your image path */
+    background-size: cover; /* Cover the entire area of the element */
+    background-position: center center; /* Center the background image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    height: 100%;
+    
+    /* padding-left: 1px;
+    padding-top: 190px;
+   
+    width: 100vw; 
+    height: 85vh; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mailbox {
+    width: 500px;
+}
+.passbox  {
+    width: 500px;
+}
+.submit {
+    /* padding-left: 200px;
+    padding-top: 20px; */
+}
+.togbox {
+    width: 270px;
+    height: 60px;
+    
+}
+.toggle {
+    padding-top: 10px;
+}
+.zipbox {
+    width: 500px;
+   
+}
+
+@media (max-width: 480px) {
+    .container_box {
+        padding-top: 0; 
+    }
+
+    .card {
+        width: 100%; 
+        padding: 10px;
+    }
+
+    .submit {
+        padding-top: 10px; 
+    }
+
+    .togbox {
+        height: 40px; 
+    }
+}
+
+
+
+

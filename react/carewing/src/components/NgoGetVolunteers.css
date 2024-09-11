@@ -1,0 +1,32 @@
+.lists-container-display{
+    padding: 50px;
+    margin: 50px;
+}
+
+  
+.donate-container-intro {
+  padding: 50px;
+  padding-top: 150px;
+  text-align: center;
+  background-color: rgba(18, 14, 238, 0.233);
+  margin: 0px;
+}
+
+.donate-container-intro h1{
+  padding: 30px;
+  background-color: rgba(81, 14, 238, 0.712);
+  color: #fff;
+  border-radius: 50px;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+.donate-container-intro p{
+  padding-bottom: 30px;
+}
+
+.accordion{
+  margin-bottom: 50px;
+  margin-top: 0%;
+  padding-top: 0%;
+}

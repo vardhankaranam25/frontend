@@ -1,0 +1,23 @@
+meta {
+  name: SignUp
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:5001/Users/Volunteer/66131f26a917bbb316e1808c?course=Math
+  body: json
+  auth: none
+}
+
+query {
+  course: Math
+}
+
+body:json {
+  {
+    "name" : "batman",
+    "password" : "bat",
+    "mail" : "batman@gmail.com"
+  }
+}

@@ -1,0 +1,125 @@
+.table-container-display{
+    margin: 0px;
+}
+
+  .table-cell {
+    width: 25%; 
+  }
+
+  .vol-list-intro{
+    padding: 100px;
+    padding-top: 150px;
+    text-align: center;
+    background-color: rgb(182, 233, 216);
+  }
+
+  .vol-list-intro *{
+    padding: 10px;
+  }
+
+  /* Media Queries */
+
+/* Small Devices (Mobile Phones) */
+@media (max-width: 576px) {
+  .vol-list-intro {
+    padding: 50px; /* Reduced padding for smaller screens */
+    padding-top: 100px; /* Adjusted top padding */
+  }
+
+  .vol-list-intro h1,
+  .vol-list-intro h2 {
+    font-size: 18px; /* Smaller font size for mobile */
+  }
+
+  .vol-list-intro p {
+    font-size: 14px; /* Smaller font size */
+    padding: 5px; /* Adjusted padding */
+  }
+
+  .table-container-display {
+    padding: 20px; /* Adjusted padding for mobile */
+  }
+
+  .table-cell {
+    font-size: 14px; /* Smaller font size */
+    padding: 5px; /* Reduced padding */
+  }
+
+  .btn {
+    width: 100px; /* Adjusted width */
+    height: 40px; /* Reduced height */
+  }
+
+  .table-row {
+    flex-direction: column; /* Stack cells vertically */
+  }
+}
+
+/* Medium Devices (Tablets) */
+@media (min-width: 577px) and (max-width: 768px) {
+  .vol-list-intro {
+    padding: 75px; /* Adjusted padding for tablets */
+    padding-top: 125px; /* Adjusted top padding */
+  }
+
+  .vol-list-intro h1,
+  .vol-list-intro h2 {
+    font-size: 20px; /* Adjusted font size for tablets */
+  }
+
+  .vol-list-intro p {
+    font-size: 16px; /* Adjusted font size for tablets */
+    padding: 10px; /* Adjusted padding */
+  }
+
+  .table-container-display {
+    padding: 30px; /* Adjusted padding for tablets */
+  }
+
+  .table-cell {
+    font-size: 16px; /* Adjusted font size */
+    padding: 10px; /* Adjusted padding */
+  }
+
+  .btn {
+    width: 120px; /* Increased width */
+    height: 45px; /* Adjusted height */
+  }
+}
+
+/* Large Devices (Laptops and Desktops) */
+@media (min-width: 769px) {
+  .vol-list-intro {
+    padding: 100px; /* Restored padding */
+    padding-top: 150px; /* Restored top padding */
+  }
+
+  .vol-list-intro h1,
+  .vol-list-intro h2 {
+    font-size: 25px; /* Restored font size */
+  }
+
+  .vol-list-intro p {
+    font-size: 18px; /* Restored font size */
+    padding: 10px; /* Restored padding */
+  }
+
+  .table-container-display {
+    padding: 50px; /* Restored padding */
+  }
+
+  .table-cell {
+    font-size: 18px; /* Restored font size */
+    padding: 15px; /* Restored padding */
+  }
+
+  .btn {
+    width: 150px; /* Increased width for larger screens */
+    height: 50px; /* Restored height */
+  }
+
+  .table-row {
+    flex-direction: row; /* Restore horizontal layout */
+  }
+}
+

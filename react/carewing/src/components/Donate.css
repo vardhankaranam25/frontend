@@ -1,0 +1,285 @@
+  /* Donate.css */
+
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+  }
+
+  .nav {
+    width: 100%;
+    background-color: rgb(246, 241, 241);
+    height: 100px;
+}
+
+  .user-donate-container {
+    align-items: center; /* Center vertically in the viewport */
+    height: 100vh; /* Full viewport height */
+    width: 100vw; /* Full viewport width */
+    padding: 0;
+    margin-top: 50px;
+  }
+  
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center children horizontally */
+    justify-content: center; /* Center children vertically */
+    padding: 2rem; /* Adjust the padding as needed */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background-color: #fff;
+    width: 100%; /* Use the full width of its container */
+    max-width: 600px; /* Set a maximum width for larger devices */
+    margin-top: 80px;
+    margin-left: 0%;
+  }
+  
+  .button-container {
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically */
+    width: 100%; /* Full width within the form container */
+    gap: 1rem; /* Space between buttons */
+  }
+  
+  .upload-button,
+  .donate-button {
+    width: 100%; /* Buttons take the full width of their container */
+  }
+  
+  .file-name {
+    align-self: center; /* Center file name horizontally */
+    margin-top: 1rem; /* Space above the file name */
+  }
+
+a {
+  color: red;
+  text-decoration: none;
+}
+
+.my-donation {
+  height: 30px;
+  text-align: center;
+}
+
+.container_donate {
+  justify-content: center; /* Center horizontally in the viewport */
+  align-items: center; /* Center vertically in the viewport */
+  height: 100vh; /* Full viewport height */
+  width: 100vw; /* Full viewport width */
+  padding: 0;
+  margin: 0;
+  vertical-align: middle;
+}
+
+.textfield {
+  width: 100%; /* Full width within the form container */
+  margin-bottom: 1rem; /* Margin at the bottom of each text field */
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column; /* Stack buttons vertically */
+  width: 100%; /* Full width within the form container */
+  gap: 1rem; /* Space between buttons */
+}
+
+.upload-button,
+.donate-button {
+  width: 100%; /* Buttons take the full width of their container */
+}
+
+.file-name {
+  align-self: center; /* Center file name horizontally */
+  margin-top: 1rem; /* Space above the file name */
+}
+
+.form-div {
+  padding: 100px;
+  padding-top: 0px;
+}
+
+.user-donate-rows {
+  display: flex;
+  /* padding-top: 64px; */
+}
+
+.user-donate-columns {
+  flex: 1;
+  text-align: center;
+  flex-basis: 33.33%; /* Set equal width for all columns */
+  box-sizing: border-box; /* Include padding in the width */
+}
+
+.user-donate-columns h1 {
+  color:rgb(15, 3, 70);
+  background-color: rgb(209, 214, 214);
+  padding: 30px;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  margin: 0px;
+}
+
+.user-donate-columns h3 {
+  color: rgb(15, 3, 70);
+  padding: 30px;
+  font-weight: bolder;
+  margin: 0px;
+}
+
+.user-donate-columns img {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.donate-article {
+  position: relative;
+  z-index: 1; /* Ensure the content is above the shape */
+  text-align: center;
+}
+
+.donate-article p {
+  text-align: justify;
+}
+
+.donate-article h2 {
+  background-color: #ffcc00d7;
+  padding: 10px;
+  border-radius: 50px;
+}
+
+.donate-article h3{
+  color: darkred;
+}
+
+.user-donate-2 {
+  display: flex;
+  gap: 80px;
+  padding: 100px;
+}
+
+.user-donate-2 h1{
+  padding-top: 50px;
+}
+
+.marquee-container {
+  width: 100%; /* Set the width of the container */
+  overflow: hidden; /* Hide overflowing content */
+  background-color: #ffcc00;
+}
+
+.marquee {
+  white-space: nowrap; /* Prevent text wrapping */
+  animation: marquee 20s linear infinite; /* Adjust animation duration as needed */
+}
+
+.marquee-text {
+  display: inline-block; /* Make sure the text doesn't break into multiple lines */
+  color: black;
+  padding: 20px;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+.donate-btns{
+  display: flex;
+  gap: 120px;
+  padding: 20px;
+  justify-content: center; /* Center flex items horizontally */
+  align-items: center; /* Center flex items vertically */
+  background-color: rgba(137, 143, 142, 0.26);
+}
+
+.donate-form-flex{
+  display: flex;
+}
+
+.donate-heading{
+  text-align: center;
+  margin-top: 80px;
+}
+
+.form-textfield{
+  width: 100%;
+  height: 100px;
+  padding: 80px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.flex-donate-2{
+  padding: 200px;
+  background-color: #ffcc00d7;
+}
+
+.flex-donate-2 h2{
+  padding-top: 50px;
+  color: darkred;
+}
+
+.donate-form-header{
+  padding-bottom: 50px;
+}
+
+@media (max-width: 576px) {
+  .form-container {
+    padding: 1rem; /* Reduce padding */
+    margin-top: 40px;
+  }
+
+  .user-donate-columns {
+    flex-basis: 100%; /* Stack columns vertically */
+  }
+
+  .user-donate-columns h1,
+  .user-donate-columns h3 {
+    padding: 15px; /* Reduce padding */
+  }
+
+  .donate-btns {
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 0.5rem; /* Reduce gap between buttons */
+  }
+
+  .flex-donate-2 {
+    padding: 100px;
+  }
+}
+
+/* Medium Devices (Tablets) */
+@media (min-width: 577px) and (max-width: 768px) {
+  .user-donate-columns {
+    flex-basis: 50%; /* Two columns on tablets */
+  }
+
+  .donate-btns {
+    gap: 1rem; /* Adjust gap */
+  }
+
+  .flex-donate-2 {
+    padding: 150px;
+  }
+}
+
+/* Large Devices (Laptops and Desktops) */
+@media (min-width: 769px) {
+  .user-donate-columns {
+    flex-basis: 33.33%; /* Restore original column layout */
+  }
+
+  .donate-btns {
+    gap: 1.5rem; /* Increase gap for larger screens */
+  }
+
+  .flex-donate-2 {
+    padding: 200px; /* More padding for larger screens */
+  }
+}

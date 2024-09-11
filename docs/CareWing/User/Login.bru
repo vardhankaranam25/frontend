@@ -1,0 +1,16 @@
+meta {
+  name: Login
+  type: http
+  seq: 2
+}
+
+get {
+  url: http://localhost:5001/Users/Login?username=vardhan&password=xyz
+  body: none
+  auth: none
+}
+
+query {
+  username: vardhan
+  password: xyz
+}

@@ -1,0 +1,14 @@
+.list-container-display {
+    margin: 30px;
+    margin-top: 100px;
+}
+
+.list-container-intro{
+    padding: 50px;
+    text-align: center;
+    background-color: rgba(187, 207, 75, 0.466);
+}
+
+.list-container-intro p{
+    padding: 30px;
+}

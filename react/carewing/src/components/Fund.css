@@ -1,0 +1,117 @@
+.fund-intro{
+    padding: 100px;
+    background-color: black;
+    color: #ffcc00d7;
+    margin: 0%;
+    margin-top: 50px;
+}
+
+.fund-intro h1 {
+    color: white;
+}
+
+.fund-display-area{
+    padding: 100px;
+    background-color: rgba(20, 145, 103, 0.363);
+}
+
+.campaign-box{
+    padding: 20px;
+}
+
+/* Media Queries */
+
+/* Small Devices (Mobile Phones) */
+@media (max-width: 576px) {
+    .fund-intro {
+      padding: 20px; /* Reduced padding for smaller screens */
+    }
+  
+    .fund-intro-box {
+      padding: 10px; /* Reduced padding */
+    }
+  
+    .fund-display-area {
+      padding: 20px; /* Adjusted padding for mobile */
+    }
+  
+    .campaign-box {
+      padding: 10px; /* Reduce padding for smaller screens */
+      margin: 10px 0; /* Narrower margins */
+    }
+  
+    .fund-container-display {
+      padding: 10px; /* Reduced padding for smaller screens */
+    }
+  
+    .AccordionDetails {
+      font-size: 14px; /* Smaller font size for better readability */
+    }
+  
+    .donate-button {
+      width: 100%; /* Full width for mobile */
+      height: 40px; /* Shorter buttons */
+    }
+  }
+  
+  /* Medium Devices (Tablets) */
+  @media (min-width: 577px) and (max-width: 768px) {
+    .fund-intro {
+      padding: 30px; /* Increased padding for tablets */
+    }
+  
+    .fund-display-area {
+      padding: 30px; /* Adjusted padding for tablets */
+    }
+  
+    .campaign-box {
+      padding: 15px; /* Adjusted padding for tablets */
+    }
+  
+    .donate-button {
+      width: 90%; /* Reduced width for tablets */
+      height: 45px; /* Adjusted button height */
+    }
+  
+    .AccordionActions {
+      flex-direction: column; /* Stack actions vertically on tablets */
+      align-items: center; /* Center vertically */
+    }
+  
+    .AccordionSummary {
+      flex-direction: column; /* Stack elements vertically */
+    }
+  }
+  
+  /* Large Devices (Laptops and Desktops) */
+  @media (min-width: 769px) {
+    .fund-intro {
+      padding: 40px; /* Restore original padding */
+    }
+  
+    .fund-intro-box {
+      padding: 20px; /* Restore original padding */
+    }
+  
+    .fund-display-area {
+      padding: 40px; /* Restore original padding */
+    }
+  
+    .campaign-box {
+      padding: 20px; /* Restore original padding */
+    }
+  
+    .donate-button {
+      width: 80%; /* Reduced width for desktops */
+      height: 50px; /* Restore original height */
+    }
+  
+    .AccordionActions {
+      flex-direction: row; /* Restore default action alignment */
+    }
+  
+    .AccordionSummary {
+      flex-direction: row; /* Restore default alignment */
+    }
+  }
+  

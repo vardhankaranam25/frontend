@@ -1,0 +1,159 @@
+/* Font styles */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Nunito:wght@300&display=swap");
+
+.container-display-full {
+  margin: 0%;
+  align-items: center;
+  height: 100vh;
+}
+
+.card-flex {
+  display: flex;
+  flex-direction: row;
+  gap: 1000px;
+}
+
+.item, .donor {
+    color: #dc143c;
+    font-weight: bolder;
+}
+
+.sum {
+  color: #040947;
+  font-family: "Nunito", sans-serif;
+  font-size: large;
+  font-weight: 300;
+}
+
+
+.btn {
+    padding: 100px;
+    background-color:  rgb(15, 3, 70);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .accordian-donate{
+    padding: 20px;
+    margin: 50px;
+  }
+
+.vol-container-intro {
+  padding: 50px;
+  text-align: center;
+  background-color: rgba(14, 238, 145, 0.411);
+  margin-bottom: 50px;
+}
+
+.vol-container-intro h1{
+  margin-bottom: 20px;
+}
+
+.vol-container-intro p{
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.63);
+}
+
+.vol-container-box{
+  margin-top: 70px;
+  background-image: url("https://gt20.org/wp-content/uploads/2016/09/volunteer.png");
+  background-repeat: no-repeat;
+}
+
+.donate-display-area{
+  margin: 50px;
+}
+
+/* Small Devices (Mobile Phones) */
+@media (max-width: 576px) {
+  .card-flex {
+    flex-direction: column; /* Stack elements vertically */
+    gap: 10px; /* Reduced gap */
+  }
+
+  .item, .donor {
+    font-size: 14px; /* Smaller font size for mobile */
+  }
+
+  .btn {
+    padding: 20px; /* Reduced padding for smaller screens */
+    font-size: 14px; /* Smaller font size for mobile */
+  }
+
+  .accordian-donate {
+    padding: 10px; /* Reduced padding */
+    margin: 20px; /* Smaller margins */
+  }
+
+  .vol-container-intro {
+    padding: 20px; /* Reduced padding for smaller screens */
+  }
+
+  .vol-container-intro p {
+    padding: 10px; /* Adjusted padding for mobile */
+  }
+
+  .donate-display-area {
+    margin: 20px; /* Adjusted margins for mobile */
+  }
+
+  .AccordionActions {
+    flex-direction: column; /* Stack actions vertically */
+  }
+}
+
+/* Medium Devices (Tablets) */
+@media (min-width: 577px) and (max-width: 768px) {
+  .card-flex {
+    gap: 500px; /* Adjusted gap for tablets */
+  }
+
+  .btn {
+    padding: 30px; /* Adjusted padding */
+  }
+
+  .accordian-donate {
+    padding: 15px; /* Adjusted padding */
+  }
+
+  .vol-container-intro {
+    padding: 30px; /* Adjusted padding for tablets */
+  }
+
+  .donate-display-area {
+    margin: 30px; /* Adjusted margins for tablets */
+  }
+}
+
+/* Large Devices (Laptops and Desktops) */
+@media (min-width: 769px) {
+  .card-flex {
+    flex-direction: row; /* Restore default alignment */
+    gap: 1000px; /* Restore original gap */
+  }
+
+  .btn {
+    padding: 50px; /* Restore original padding */
+  }
+
+  .accordian-donate {
+    padding: 20px; /* Restore original padding */
+    margin: 50px; /* Restore original margin */
+  }
+
+  .vol-container-intro {
+    padding: 50px; /* Restore original padding */
+  }
+
+  .donate-display-area {
+    margin: 50px; /* Restore original margin */
+  }
+
+  .AccordionActions {
+    flex-direction: row; /* Restore default alignment */
+  }
+}
+
